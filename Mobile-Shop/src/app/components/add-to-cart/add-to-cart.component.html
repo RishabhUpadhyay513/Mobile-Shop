@@ -1,0 +1,80 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<ng-container *ngIf="products.length != 0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Rating</th>
+                            <th>category</th>
+                            <th>discountPercentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of products; let i = index" #info>
+                            <td>{{ i + 1 }}</td>
+                            <td>{{ item.title }}</td>
+                            <td>
+                                <img style="width: 120px" src="{{ item.thumbnail }}" alt="" />
+                            </td>
+                            <td style="width: 25%">{{ item.description }}</td>
+                            <th style="width: 12%">{{ item.price }}</th>
+                            <td style="width: 12%">{{ item.rating }}</td>
+                            <td style="width: 12%">{{ item.category }}</td>
+                            <td style="width: 12%">{{ item.discountPercentage }}</td>
+                            <td>
+                                <button (click)="removeItem(item)" class="btnDelet">
+                                    <fa-icon [icon]="delete" class="delete"></fa-icon>
+                                </button>
+
+                                <button (click)="pay(item)" class="credit">
+                                    <fa-icon [icon]="creditCard" class="cartIcon"></fa-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td>
+                                <button (click)="emptycart()" class="btn btn-danger">
+                                    Empty Cart
+                                </button>
+                            </td>
+                            <td>
+                                <button (click)="moreShop()" class="btn btn-primary">
+                                    Shop More
+                                </button>
+                            </td>
+                            <td><button class="btn btn-success">Checkout</button></td>
+                            <td>
+                                <strong>Grand Total : ${{ grandTotal }}</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="products.length == 0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="https://image.shutterstock.com/image-vector/empty-cart-illustration-concept-flat-600w-2064206714.jpg"
+                alt="" />
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now</h6>
+            <button routerLink="/home" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>

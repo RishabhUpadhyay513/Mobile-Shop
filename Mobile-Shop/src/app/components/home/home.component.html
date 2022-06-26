@@ -1,0 +1,126 @@
+<div class="container my-4">
+    <div class="marquee">
+        <ul class="marquee-content">
+            <li>
+                <img src="https://sc04.alicdn.com/kf/H95732b3d8e7448b8bcd181f573476ffcN.png" />
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrSPV_zvT9jvUH9LH6cJ-twnpWkpHWs2nljL3f5cURGJq8c1otcuEKji92CVy3BiIpMI&usqp=CAU" />
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswqH8bQOFIcW1BOF66_3wjtOe808BOC7YF9nuJUdhfLSUeUcvVvNRhjR_2LJYKlCMvu4&usqp=CAU" />
+            </li>
+            <li>
+                <img src="https://img.etimg.com/thumb/msid-59424968,width-640,resizemode-4,imgsize-182738/nokia-1100.jpg" />
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkPLO9wCH5NNxWALmO7O71De3lcaNmA32DA&usqp=CAU" />
+            </li>
+            <li>
+                <img src="https://do84cgvgcm805.cloudfront.net/article/595/1200/c8e4c4899a8697519f068f61f25654ba30887981a1d7310ba879359c825f390c.jpg" />
+            </li>
+            <li>
+                <img src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/find-x5-pro-en/middlebanner/findx5-pro-mobile.jpg.thumb.webp" />
+            </li>
+            <li>
+                <img src="https://filmymantra.com/wp-content/uploads/2017/08/iphone-6.jpg" />
+            </li>
+            <li>
+                <img src="https://cdn.mos.cms.futurecdn.net/yEkWrxSqnXNdDateMZCyXB.jpg" />
+            </li>
+            <li>
+                <img src="https://media.gq-magazine.co.uk/photos/62456f804a9bdf194462386f/3:4/w_810,h_1080,c_limit/30032022_PHONES_HP1.jpg" />
+            </li>
+            <li>
+                <img src="https://5.imimg.com/data5/VY/CP/GLADMIN-66068359/oppo-find-x-mobile-phone-500x500.png" />
+            </li>
+            <li>
+                <img src="https://expertreviews.b-cdn.net/sites/expertreviews/files/styles/er_main_wide/public/2021/08/best_sony_phone_uk_2021_smartphones.jpg?itok=8UKpvrV3" />
+            </li>
+        </ul>
+    </div>
+
+    <hr class="mt-5" />
+
+    <p class="paraRealme">
+        India Top Brand
+        <a target="_blank" href="https://www.realme.com/in/">Realme</a> - World Favorite Phone
+    </p>
+
+    <a class="btn btn-primary me-2" target="_blank" role="button">Realme<i class="fa fa-download"></i
+  ></a>
+    <a class="btn btn-danger me-2" target="_blank" role="button">Realme Smart Phone</a
+  >
+  <a class="btn btn-success me-2" target="_blank" role="button">Realme Tv</a>
+    <a class="btn btn-dark me-2" target="_blank" role="button">Realme Watch<i class="fa fa-github ms-2"></i
+  ></a>
+
+    <hr class="mb-5" />
+
+    <h2 class="my-5 h2 logoRealme">Realme</h2>
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner images">
+                <div class="carousel-item active">
+                    <img src="https://image01.realme.net/general/20220527/1653649590419.jpg" class="d-block w-100" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image01.realme.net/general/20220522/1653199069073.jpg" class="d-block w-100" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image01.realme.net/general/20220523/1653314248553.jpg" class="d-block w-100" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image01.realme.net/general/20220527/1653624801116.jpg" class="d-block w-100" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image01.realme.net/general/20220523/1653314535978.jpg" class="d-block w-100" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+        </div>
+    </div>
+    <br /><br />
+    <h1>Products</h1>
+    <main>
+        <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative">
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+
+                <div class="col" *ngFor="let item of filterCategory">
+                    
+                    <div class="card h-100 shadow-sm img-hover-zoom">
+                        <img src="{{ item.thumbnail }}" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <div class="clearfix mb-3">
+                                <span class="float-start badge rounded-pill bg-primary">{{
+                  item.brand
+                }}</span>
+                                <span class="float-end price-hp">{{ item.price }}&euro;</span>
+                            </div>
+                            <h5 class="card-title">
+                                {{ item.description }}
+                            </h5>
+                            <h5 class="card-title">Rating:- {{ item.rating }}</h5>
+                            <h5 class="card-title">
+                                Discount:- {{ item.discountPercentage }}
+                            </h5>
+                            <div class="text-center my-4">
+                                <button (click)="addtocart(item)" class="btn btn-warning">
+                  Add to Cart
+                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,48 @@
+button {
+    border: none;
+    font-size: 20px;
+    background-color: none;
+}
+
+img {
+    width: 8vw;
+    height: 9vh;
+    border-radius: 50%;
+}
+
+.collapse .navbar-nav .anchor {
+    color: rgb(185, 36, 190);
+    font-size: 25px;
+}
+
+.collapse .navbar-nav .anchor:hover {
+    color: rgb(43, 255, 0);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.096);
+}
+
+.cartIcon {
+    font-size: 35px;
+    margin-right: 2rem;
+}
+
+.shopping {
+    border-radius: 0;
+    width: 50px;
+}
+
+.cartTotalItem {
+    color: white;
+    position: relative;
+    left: -1.8rem;
+    font-size: 17px;
+    background-color: red;
+    border: none;
+}
+.anchor{
+    color: white;
+}

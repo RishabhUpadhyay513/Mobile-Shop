@@ -1,0 +1,21 @@
+{
+  "queryData": [
+    {
+      "id": 1
+    },
+    {
+      "name": "Rishabh Upadhyay",
+      "email": "abhayupadhyay513@gmail.com",
+      "phone": "06398943996",
+      "message": "This Website is amazing for mobiles and laptop. Great Website",
+      "id": 2
+    },
+    {
+      "name": "Aman Pandey",
+      "email": "aman.pandey@walkingtree.tech",
+      "phone": "01259852925",
+      "message": "This Website is very good for buying the mobiles",
+      "id": 3
+    }
+  ]
+}

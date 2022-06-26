@@ -1,0 +1,185 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<form [formGroup]="signup" (ngSubmit)="sendSignUpData()">
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://scontent.fdel3-3.fna.fbcdn.net/v/t1.18169-9/24862628_2144788095754936_1470616523606949742_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=924451&_nc_ohc=Y8ypIFFOL3kAX_6ughk&_nc_ht=scontent.fdel3-3.fna&oh=00_AT_MD-MPZIlT8zhtvwdLoNKBUDvpxj5ymNS_8C9-2khH_A&oe=62BE7F22"
+                    alt="" />
+                <h3>Welcome To</h3>
+                <p>World Largest Mobile Hub</p>
+                <a>More</a>
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Seller</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Buyer</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <h3 class="register-heading">Sign Up To Mobile Hub</h3>
+            <div class="row register-form">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name *"
+                    name="firstName"
+                    value=""
+                    formControlName="firstName"
+                  />
+                  <span
+                    *ngIf="firstName && firstName.invalid && firstName.touched"
+                    >Please Enter Coorect First Name</span
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name *"
+                    name="lastName"
+                    value=""
+                    formControlName="lastName"
+                  />
+                  <span *ngIf="lastName && lastName.invalid && lastName.touched"
+                    >Please Enter Coorect Last Name</span
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password *"
+                    name="password"
+                    value=""
+                    formControlName="password"
+                  />
+                  <span *ngIf="password && password.invalid && password.touched"
+                    >Please Enter Coorect Password</span
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirm Password *"
+                    name="confirmPassword"
+                    value=""
+                    formControlName="confirmPassword"
+                  />
+                  <span
+                    *ngIf="
+                      confirmPassword &&
+                      confirmPassword.invalid &&
+                      confirmPassword.touched
+                    "
+                    >Please Enter Coorect Confirm Password</span
+                  >
+                </div>
+                <div class="form-group">
+                  <div class="maxl">
+                    <label class="radio inline">
+                      <input type="radio" name="gender" value="male" checked />
+                      <span> Male </span> &nbsp;
+                    </label>
+                    <label class="radio inline">
+                      <input type="radio" name="gender" value="female" />
+                      <span>Female </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email *"
+                    name="email"
+                    value=""
+                    formControlName="email"
+                  />
+                  <span *ngIf="email && email.invalid && email.touched"
+                    >Please Enter Coorect Email</span
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    minlength="10"
+                    maxlength="10"
+                    name="txtEmpPhone"
+                    class="form-control"
+                    placeholder="Your Contct *"
+                    value=""
+                    name="contactNo"
+                    formControlName="contactNo"
+                  />
+                  <span
+                    *ngIf="contactNo && contactNo.invalid && contactNo.touched"
+                    >Please Enter Coorect Contact No.</span
+                  >
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option class="hidden" selected disabled>
+                      Please select your Favorite Brand
+                    </option>
+                    <option>APPLE</option>
+                    <option>XIAOMI</option>
+                    <option>SAMSUNG</option>
+                    <option>REALME ME</option>
+                    <option>LAPTOPS</option>
+                    <option>AIR BUDS</option>
+                    <option>DIGITAL WATCH</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Your Answer *"
+                    name="feedback"
+                    value=""
+                    formControlName="feedback"
+                  />
+                  <span *ngIf="feedback && feedback.invalid && feedback.touched"
+                    >Please Enter Coorect FeedBack</span
+                  >
+                </div>
+                <input
+                  type="submit"
+                  class="btnRegister"
+                  value="Register"
+                  [disabled]="signup.invalid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

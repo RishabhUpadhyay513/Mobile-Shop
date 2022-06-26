@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a href="#"><img src="https://scontent.fdel3-3.fna.fbcdn.net/v/t1.18169-9/24862628_2144788095754936_1470616523606949742_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=924451&_nc_ohc=Y8ypIFFOL3kAX_6ughk&_nc_ht=scontent.fdel3-3.fna&oh=00_AT_MD-MPZIlT8zhtvwdLoNKBUDvpxj5ymNS_8C9-2khH_A&oe=62BE7F22"
+                alt="" /></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a (click)="checkUser()" class="anchor nav-item nav-link active">Home</a
+        >
+        <div class="nav-item dropdown">
+          <a (click)="checkUser()" class="anchor nav-link">Admin-Dashboard</a>
+            </div>
+            <div class="nav-item dropdown">
+                <a (click)="checkUser()" class="anchor nav-link">Connect-Us</a>
+            </div>
+            <div class="nav-item dropdown">
+                <a (click)="checkUser()" class="anchor nav-link">About</a>
+            </div>
+
+            <a routerLink="login" class="anchor nav-item nav-link">Login</a>
+            <a routerLink="signup" class="anchor nav-item nav-link">Sign Up</a>
+        </div>
+        <form class="d-flex">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" />
+                <button type="button" class="btn btn-secondary">
+            <i class="bi-search"></i>
+          </button>
+            </div>
+        </form>
+        <div class="navbar-nav">
+            <a routerLink="addToCart">
+                <fa-icon [icon]="cartIcon" class="cartIcon" (click)="checkUser()"></fa-icon>
+                <button class="cartTotalItem">0</button>
+            </a>
+            <button (click)="logoutUser()" class="anchor nav-item nav-link" *ngIf="status">
+          LogOut
+        </button>
+        </div>
+    </div>
+    </div>
+</nav>

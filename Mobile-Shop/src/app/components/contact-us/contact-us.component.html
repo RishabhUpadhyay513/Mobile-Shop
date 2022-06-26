@@ -1,0 +1,132 @@
+<div class="contact3 py-5">
+    <div class="row no-gutters">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card-shadow">
+                        <img src="https://candytech.in/wp-content/uploads/2021/09/gsmarena_001-2.jpg" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-box ml-3">
+                        <h1 class="font-weight-light mt-2 getTouch">Get In Touch</h1>
+                        <form class="mt-4" [formGroup]="contactUs" (ngSubmit)="getQuery()">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <input class="form-control" type="text" placeholder="name" name="name" formControlName="name" />
+                                        <span *ngIf="name && name.invalid && name.touched" class="validMsg">Please Enter Correct Name</span
+                    >
+                  </div>
+                  <br />
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="email address"
+                      name="email"
+                      formControlName="email"
+                    />
+                    <span
+                      *ngIf="email && email.invalid && email.touched"
+                      class="validMsg"
+                      >Please Enter Correct Email</span
+                    >
+                  </div>
+                  <br />
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="phone"
+                      name="phone"
+                      formControlName="phone"
+                    />
+                    <span
+                      *ngIf="phone && phone.invalid && phone.touched"
+                      class="validMsg"
+                      >Please Enter Correct Contact</span
+                    >
+                  </div>
+                  <br />
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      placeholder="message"
+                      name="message"
+                      formControlName="message"
+                    ></textarea>
+                    <span
+                      *ngIf="message && message.invalid && message.touched"
+                      class="validMsg"
+                      >Please Type Correct Message</span
+                    >
+                  </div>
+                  <br />
+                </div>
+                <div class="col-lg-12">
+                  <button
+                    class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"
+                  >
+                    <span> SUBMIT</span>
+                                        </button>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card mt-4 border-0 mb-4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card-body d-flex align-items-center c-detail pl-0">
+                                        <div class="mr-3 align-self-center">
+                                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon1.png" />
+                                        </div>
+                                        <div class="">
+                                            <h6 class="font-weight-medium">Address</h6>
+                                            <p class="">
+                                                Agra Sanjay Palace <br /> 048 R.K Shop Sanjay Palace
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card-body d-flex align-items-center c-detail">
+                                        <div class="mr-3 align-self-center">
+                                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png" />
+                                        </div>
+                                        <div class="">
+                                            <h6 class="font-weight-medium">Phone</h6>
+                                            <p class="">+91-6398943996<br />+91-9027443278</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card-body d-flex align-items-center c-detail">
+                                        <div class="mr-3 align-self-center">
+                                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png" />
+                                        </div>
+                                        <div class="">
+                                            <h6 class="font-weight-medium">Email</h6>
+                                            <p class="">
+                                                abhayupadhyay513@gmail.com
+                                                <br /> r.k476@yahoo.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
